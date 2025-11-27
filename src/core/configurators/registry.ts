@@ -6,6 +6,7 @@ import { CostrictConfigurator } from './costrict.js';
 import { QoderConfigurator } from './qoder.js';
 import { AgentsStandardConfigurator } from './agents.js';
 import { QwenConfigurator } from './qwen.js';
+import { IflowConfigurator } from './iflow.js';
 
 export class ToolRegistry {
   private static tools: Map<string, ToolConfigurator> = new Map();
@@ -18,6 +19,7 @@ export class ToolRegistry {
     const qoderConfigurator = new QoderConfigurator();
     const agentsConfigurator = new AgentsStandardConfigurator();
     const qwenConfigurator = new QwenConfigurator();
+    const iflowConfigurator = new IflowConfigurator();
     // Register with the ID that matches the checkbox value
     this.tools.set('claude', claudeConfigurator);
     this.tools.set('cline', clineConfigurator);
@@ -26,6 +28,7 @@ export class ToolRegistry {
     this.tools.set('qoder', qoderConfigurator);
     this.tools.set('agents', agentsConfigurator);
     this.tools.set('qwen', qwenConfigurator);
+    this.tools.set('iflow', iflowConfigurator);
   }
 
   static register(tool: ToolConfigurator): void {

@@ -1,4 +1,23 @@
-# @fission-ai/openspec
+# @org-hex/openspec-chinese
+
+## 0.16.0
+
+### Minor Changes
+
+- c08fbc1: 新增 AI 工具集成和功能增强：
+
+  - **feat(iflow-cli)**: 新增 iFlow-cli 集成，支持斜杠命令和文档
+  - **feat(init)**: 初始化后添加 IDE 重启提示，告知用户斜杠命令可用性
+  - **feat(antigravity)**: 新增 Antigravity 斜杠命令支持
+  - **fix**: 修复 Qwen Code 的 TOML 命令生成 (修复 #293)
+  - 改进 scaffold 提案文档和增强提案指导方针
+  - 更新提案指导方针，强调实施前的设计优先方法
+
+## 0.15.1
+
+### Patch Changes
+
+- 同步上游 0.15.0 版本功能，支持新增的 AI 工具集成
 
 ## 0.15.0
 

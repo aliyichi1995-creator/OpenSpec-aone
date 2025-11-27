@@ -1,6 +1,6 @@
 {
   "name": "@org-hex/openspec-chinese",
-  "version": "0.15.1",
+  "version": "0.16.0",
   "description": "AI-native system for spec-driven development",
   "keywords": [
     "openspec",
@@ -50,7 +50,9 @@
     "release": "pnpm run release:ci",
     "release:ci": "pnpm run check:pack-version && pnpm exec changeset publish",
     "release:local": "pnpm exec changeset version && pnpm run check:pack-version && pnpm exec changeset publish",
-    "changeset": "changeset"
+    "changeset": "changeset",
+    "validate:chinese": "node scripts/validate-chinese-spec.js",
+    "create:proposal": "node scripts/create-chinese-proposal.js"
   },
   "engines": {
     "node": ">=20.19.0"
