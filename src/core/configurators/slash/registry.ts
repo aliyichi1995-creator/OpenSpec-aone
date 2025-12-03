@@ -9,6 +9,7 @@ import { OpenCodeSlashCommandConfigurator } from './opencode.js';
 import { CodexSlashCommandConfigurator } from './codex.js';
 import { GitHubCopilotSlashCommandConfigurator } from './github-copilot.js';
 import { AmazonQSlashCommandConfigurator } from './amazon-q.js';
+import { AoneCopilotSlashCommandConfigurator } from './aone-copilot.js';
 import { FactorySlashCommandConfigurator } from './factory.js';
 import { GeminiSlashCommandConfigurator } from './gemini.js';
 import { AuggieSlashCommandConfigurator } from './auggie.js';
@@ -34,6 +35,7 @@ export class SlashCommandRegistry {
     const codex = new CodexSlashCommandConfigurator();
     const githubCopilot = new GitHubCopilotSlashCommandConfigurator();
     const amazonQ = new AmazonQSlashCommandConfigurator();
+    const aoneCopilot = new AoneCopilotSlashCommandConfigurator();
     const factory = new FactorySlashCommandConfigurator();
     const gemini = new GeminiSlashCommandConfigurator();
     const auggie = new AuggieSlashCommandConfigurator();
@@ -55,6 +57,7 @@ export class SlashCommandRegistry {
     this.configurators.set(codex.toolId, codex);
     this.configurators.set(githubCopilot.toolId, githubCopilot);
     this.configurators.set(amazonQ.toolId, amazonQ);
+    this.configurators.set(aoneCopilot.toolId, aoneCopilot);
     this.configurators.set(factory.toolId, factory);
     this.configurators.set(gemini.toolId, gemini);
     this.configurators.set(auggie.toolId, auggie);

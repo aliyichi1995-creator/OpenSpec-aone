@@ -20,6 +20,8 @@ export interface AIToolChineseOption extends AIToolOption {
 }
 
 export const AI_TOOLS_CHINESE: AIToolChineseOption[] = [
+  { name: 'Amazon Q Developer', value: 'amazon-q', available: true, successLabel: 'Amazon Q Developer', chineseName: '亚马逊Q开发者' },
+  { name: 'Aone Copilot', value: 'aone-copilot', available: true, successLabel: 'Aone Copilot', chineseName: 'Aone智能编程助手' },
   { name: 'Auggie (Augment CLI)', value: 'auggie', available: true, successLabel: 'Auggie', chineseName: 'Auggie增强CLI' },
   { name: 'Claude Code', value: 'claude', available: true, successLabel: 'Claude Code', chineseName: 'Claude代码助手' },
   { name: 'Cline', value: 'cline', available: true, successLabel: 'Cline', chineseName: 'Cline智能助手' },
@@ -36,7 +38,6 @@ export const AI_TOOLS_CHINESE: AIToolChineseOption[] = [
   { name: 'Windsurf', value: 'windsurf', available: true, successLabel: 'Windsurf', chineseName: 'Windsurf冲浪编程' },
   { name: 'Codex', value: 'codex', available: true, successLabel: 'Codex', chineseName: 'Codex代码生成' },
   { name: 'GitHub Copilot', value: 'github-copilot', available: true, successLabel: 'GitHub Copilot', chineseName: 'GitHub智能编程伙伴' },
-  { name: 'Amazon Q Developer', value: 'amazon-q', available: true, successLabel: 'Amazon Q Developer', chineseName: '亚马逊Q开发者' },
   { name: 'Qwen Code', value: 'qwen', available: true, successLabel: 'Qwen Code', chineseName: '通义代码助手' },
   { name: 'AGENTS.md (works with Amp, VS Code, …)', value: 'agents', available: false, successLabel: 'your AGENTS.md-compatible assistant', chineseName: 'AGENTS.md兼容助手（适用于Amp、VS Code等）' }
 ];
