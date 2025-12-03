@@ -1,5 +1,5 @@
 {
-  "name": "@aone/openspec",
+  "name": "@ducky/openspec-aone",
   "version": "0.2.0",
   "description": "AI-native system for spec-driven development",
   "keywords": [
@@ -9,10 +9,10 @@
     "ai",
     "development"
   ],
-  "homepage": "https://github.com/org-hex/openspec-chinese",
+  "homepage": "https://github.com/your-username/your-repo-name",
   "repository": {
     "type": "git",
-    "url": "https://github.com/org-hex/openspec-chinese"
+    "url": "https://github.com/your-username/your-repo-name"
   },
   "license": "MIT",
   "author": "OpenSpec Contributors",
@@ -27,6 +27,7 @@
     }
   },
   "bin": {
+    "openspec": "./bin/openspec.js",
     "openspec-chinese": "./bin/openspec-chinese.js"
   },
   "files": [
